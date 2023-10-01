@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="msx_mist">
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_SPRITE:U_SPRITE|VDP_SPINFORAM:ISPINFORAM|altsyncram:IMEM_rtl_0" CBX_FILE_NAME="altsyncram_7c41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|envelopegenerator:eg|EnvelopeMemory:u_envelope_memory|altsyncram:egdata_set_rtl_0" CBX_FILE_NAME="altsyncram_7ci1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|envelopegenerator:eg|AttackTable:u_attack_table|altsyncram:Mux6_rtl_0" CBX_FILE_NAME="altsyncram_m401.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|envelopegenerator:eg|AttackTable:u_attack_table|attack_table_mul:u_attack_table_mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_f3t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|OutputGenerator:og|LinearTable:Ltbl|linear_table_mul:u_linear_table_mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_n4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseps2:U06|ram:U1|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_5e41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|T80a:U01|T80:u0|T80_Reg:Regs|altsyncram:RegsH_rtl_0" CBX_FILE_NAME="altsyncram_smg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_VGA:U_VDP_VGA|VDP_DOUBLEBUF:DBUF|VDP_LINEBUF:U_BUF_GO|altsyncram:IMEM_rtl_0" CBX_FILE_NAME="altsyncram_8f41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|rtc_mist:U07|ram:u_mem|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_cc41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|scc_mix_mul:u_mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_j4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_VGA:U_VDP_VGA|VDP_DOUBLEBUF:DBUF|VDP_LINEBUF:U_BUF_BE|altsyncram:IMEM_rtl_0" CBX_FILE_NAME="altsyncram_8f41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_VGA:U_VDP_VGA|VDP_DOUBLEBUF:DBUF|VDP_LINEBUF:U_BUF_RE|altsyncram:IMEM_rtl_0" CBX_FILE_NAME="altsyncram_8f41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|Operator:op|SineTable:u_sine_table|altsyncram:Mux10_rtl_0" CBX_FILE_NAME="altsyncram_3601.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|PhaseGenerator:pg|PhaseMemory:MEM|altsyncram:phase_array_rtl_0" CBX_FILE_NAME="altsyncram_qpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|PhaseGenerator:pg|lpm_mult:Mult0" CBX_FILE_NAME="mult_cat.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|pll:pll|altpll:altpll_component" CBX_FILE_NAME="pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|sd_card:sd_card|sd_card_dpram:buffer_dpram|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_89r1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|controller:ct|VoiceMemory:vmem|altsyncram:voices_rtl_0" CBX_FILE_NAME="altsyncram_hci1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|wifi:uwifi|FIFO:U2|altsyncram:memory_rtl_0" CBX_FILE_NAME="altsyncram_03h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_SPRITE:U_SPRITE|ram:U_EVEN_LINE_BUF|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_5e41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_VGA:U_VDP_VGA|VDP_DOUBLEBUF:DBUF|VDP_LINEBUF:U_BUF_BO|altsyncram:IMEM_rtl_0" CBX_FILE_NAME="altsyncram_8f41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_VGA:U_VDP_VGA|VDP_DOUBLEBUF:DBUF|VDP_LINEBUF:U_BUF_RO|altsyncram:IMEM_rtl_0" CBX_FILE_NAME="altsyncram_8f41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|Operator:op|SineTable:u_sine_table|altsyncram:Mux21_rtl_0" CBX_FILE_NAME="altsyncram_2601.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|OutputGenerator:og|FeedbackMemory:Fmem|altsyncram:data_array_rtl_0" CBX_FILE_NAME="altsyncram_8md1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|OutputGenerator:og|LinearTable:Ltbl|altsyncram:Mux17_rtl_0" CBX_FILE_NAME="altsyncram_cbv.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|OutputGenerator:og|LinearTable:Ltbl|altsyncram:Mux8_rtl_0" CBX_FILE_NAME="altsyncram_dbv.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|controller:ct|RegisterMemory:u_register_memory|altsyncram:regs_array_rtl_0" CBX_FILE_NAME="altsyncram_imd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|controller:ct|VoiceMemory:vmem|altsyncram:voices_rtl_1" CBX_FILE_NAME="altsyncram_0qd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|megaram:U31_1|scc_wave:SccCh|scc_wave_mul:u_mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_73t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|T80a:U01|T80:u0|T80_Reg:Regs|altsyncram:RegsL_rtl_0" CBX_FILE_NAME="altsyncram_smg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_REGISTER:U_VDP_REGISTER|ram:U_PALETTEMEMG|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_6c41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_SPRITE:U_SPRITE|ram:U_ODD_LINE_BUF|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_5e41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|controller:ct|VoiceMemory:vmem|VoiceRom:ROM2413|altsyncram:Mux7_rtl_0" CBX_FILE_NAME="altsyncram_f9v.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|envelopegenerator:eg|AttackTable:u_attack_table|altsyncram:Mux13_rtl_0" CBX_FILE_NAME="altsyncram_l401.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|esepwm:U33|esefir5:U1|tapram:u0|altsyncram:TapMem_rtl_0" CBX_FILE_NAME="altsyncram_ka81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|megaram:U31_2|scc_wave:SccCh|scc_wave_mul:u_mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_73t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|T80a:U01|T80:u0|lpm_mult:Mult0" CBX_FILE_NAME="mult_nbt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_VGA:U_VDP_VGA|VDP_DOUBLEBUF:DBUF|VDP_LINEBUF:U_BUF_GE|altsyncram:IMEM_rtl_0" CBX_FILE_NAME="altsyncram_8f41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VENCODE:U21|altsyncram:Mux3_rtl_0" CBX_FILE_NAME="altsyncram_h9v.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|Operator:op|SineTable:u_sine_table|interpolate_mul:u_interpolate_mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_v5t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|OutputGenerator:og|OutputMemory:Mmem|altsyncram:data_array_rtl_0" CBX_FILE_NAME="altsyncram_tbi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|esepwm:U33|esefir5:U1|lpm_mult:Mult0" CBX_FILE_NAME="mult_obt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|megaram:U31_1|scc_wave:SccCh|ram:wavemem|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_5e41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|osd:osd|altsyncram:osd_buffer_rtl_0" CBX_FILE_NAME="altsyncram_jle1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|INTERPO:u_interpo|INTERPO_MUL:U_INTERPO_MUL|lpm_mult:Mult0" CBX_FILE_NAME="mult_r4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseopll:U32|opll:U1|OutputGenerator:og|OutputMemory:Mmem|altsyncram:data_array_rtl_1" CBX_FILE_NAME="altsyncram_tbi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|iplrom:U02|altsyncram:Ram0_rtl_0" CBX_FILE_NAME="altsyncram_s471.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|megaram:U31_2|scc_wave:SccCh|ram:wavemem|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_5e41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_GRAPHIC4567:U_VDP_GRAPHIC4567|ram:U_FIFOMEM|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_5e41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|eseps2:U06|keymap:U2|altsyncram:Mux0_rtl_0" CBX_FILE_NAME="altsyncram_bfv.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MSX|emsx_top:emsx|VDP:U20|VDP_REGISTER:U_VDP_REGISTER|ram:U_PALETTEMEMRB|altsyncram:blkram_rtl_0" CBX_FILE_NAME="altsyncram_9c41.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
