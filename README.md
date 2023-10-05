@@ -15,4 +15,4 @@ It features:
 
 Use at your own risk
 
-Enjoy
+Enjoy it!
