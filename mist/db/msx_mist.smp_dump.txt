@@ -1,0 +1,126 @@
+
+State Machine - |MSX|emsx_top:emsx|midi:umidi|my_tx_state
+Name my_tx_state.STATE_TX_FINISH my_tx_state.STATE_TX_DATA my_tx_state.STATE_TX_IDLE 
+my_tx_state.STATE_TX_IDLE 0 0 0 
+my_tx_state.STATE_TX_DATA 0 1 1 
+my_tx_state.STATE_TX_FINISH 1 0 1 
+
+State Machine - |MSX|emsx_top:emsx|midi:umidi|UART:U1|tx_current_state_s
+Name tx_current_state_s.STATE_TX_FINISH tx_current_state_s.STATE_TX_STOP tx_current_state_s.STATE_TX_DATA tx_current_state_s.STATE_TX_START tx_current_state_s.STATE_TX_IDLE 
+tx_current_state_s.STATE_TX_IDLE 0 0 0 0 0 
+tx_current_state_s.STATE_TX_START 0 0 0 1 1 
+tx_current_state_s.STATE_TX_DATA 0 0 1 0 1 
+tx_current_state_s.STATE_TX_STOP 0 1 0 0 1 
+tx_current_state_s.STATE_TX_FINISH 1 0 0 0 1 
+
+State Machine - |MSX|emsx_top:emsx|midi:umidi|UART:U1|rx_current_state_s
+Name rx_current_state_s.STATE_RX_FINISH rx_current_state_s.STATE_RX_STOP rx_current_state_s.STATE_RX_DATA rx_current_state_s.STATE_RX_START rx_current_state_s.STATE_RX_IDLE 
+rx_current_state_s.STATE_RX_IDLE 0 0 0 0 0 
+rx_current_state_s.STATE_RX_START 0 0 0 1 1 
+rx_current_state_s.STATE_RX_DATA 0 0 1 0 1 
+rx_current_state_s.STATE_RX_STOP 0 1 0 0 1 
+rx_current_state_s.STATE_RX_FINISH 1 0 0 0 1 
+
+State Machine - |MSX|emsx_top:emsx|wifi:uwifi|my_cmd_state
+Name my_cmd_state.STATE_CMD_FINISH my_cmd_state.STATE_CMD_DATA my_cmd_state.STATE_CMD_IDLE 
+my_cmd_state.STATE_CMD_IDLE 0 0 0 
+my_cmd_state.STATE_CMD_DATA 0 1 1 
+my_cmd_state.STATE_CMD_FINISH 1 0 1 
+
+State Machine - |MSX|emsx_top:emsx|wifi:uwifi|my_rx_state
+Name my_rx_state.STATE_RX_FINISH my_rx_state.STATE_RX_WAITDATA my_rx_state.STATE_RX_DATA my_rx_state.STATE_RX_IDLE 
+my_rx_state.STATE_RX_IDLE 0 0 0 0 
+my_rx_state.STATE_RX_DATA 0 0 1 1 
+my_rx_state.STATE_RX_WAITDATA 0 1 0 1 
+my_rx_state.STATE_RX_FINISH 1 0 0 1 
+
+State Machine - |MSX|emsx_top:emsx|wifi:uwifi|my_tx_state
+Name my_tx_state.STATE_TX_FINISH my_tx_state.STATE_TX_DATA my_tx_state.STATE_TX_IDLE 
+my_tx_state.STATE_TX_IDLE 0 0 0 
+my_tx_state.STATE_TX_DATA 0 1 1 
+my_tx_state.STATE_TX_FINISH 1 0 1 
+
+State Machine - |MSX|emsx_top:emsx|wifi:uwifi|UART:U1|tx_current_state_s
+Name tx_current_state_s.STATE_TX_FINISH tx_current_state_s.STATE_TX_STOP tx_current_state_s.STATE_TX_DATA tx_current_state_s.STATE_TX_START tx_current_state_s.STATE_TX_IDLE 
+tx_current_state_s.STATE_TX_IDLE 0 0 0 0 0 
+tx_current_state_s.STATE_TX_START 0 0 0 1 1 
+tx_current_state_s.STATE_TX_DATA 0 0 1 0 1 
+tx_current_state_s.STATE_TX_STOP 0 1 0 0 1 
+tx_current_state_s.STATE_TX_FINISH 1 0 0 0 1 
+
+State Machine - |MSX|emsx_top:emsx|wifi:uwifi|UART:U1|rx_current_state_s
+Name rx_current_state_s.STATE_RX_FINISH rx_current_state_s.STATE_RX_STOP rx_current_state_s.STATE_RX_DATA rx_current_state_s.STATE_RX_START rx_current_state_s.STATE_RX_IDLE 
+rx_current_state_s.STATE_RX_IDLE 0 0 0 0 0 
+rx_current_state_s.STATE_RX_START 0 0 0 1 1 
+rx_current_state_s.STATE_RX_DATA 0 0 1 0 1 
+rx_current_state_s.STATE_RX_STOP 0 1 0 0 1 
+rx_current_state_s.STATE_RX_FINISH 1 0 0 0 1 
+
+State Machine - |MSX|emsx_top:emsx|VDP:U20|VDP_COMMAND:U_VDP_COMMAND|STATE
+Name STATE.STEXECEND STATE.STSRCHCHKLOOP STATE.STLINECHKLOOP STATE.STLINENEWPOS STATE.STWAITWRVRAM STATE.STWRVRAM STATE.STWAITPRERDVRAM STATE.STPRERDVRAM STATE.STSRCHWAITRDVRAM STATE.STPOINTWAITRDVRAM STATE.STWAITRDVRAM STATE.STRDVRAM STATE.STWAITCPU STATE.STRDCPU STATE.STCHKLOOP STATE.STIDLE 
+STATE.STIDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+STATE.STCHKLOOP 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+STATE.STRDCPU 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+STATE.STWAITCPU 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+STATE.STRDVRAM 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+STATE.STWAITRDVRAM 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+STATE.STPOINTWAITRDVRAM 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+STATE.STSRCHWAITRDVRAM 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+STATE.STPRERDVRAM 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+STATE.STWAITPRERDVRAM 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+STATE.STWRVRAM 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+STATE.STWAITWRVRAM 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+STATE.STLINENEWPOS 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+STATE.STLINECHKLOOP 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+STATE.STSRCHCHKLOOP 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+STATE.STEXECEND 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |MSX|emsx_top:emsx|VDP:U20|VDP_SPRITE:U_SPRITE|SPSTATE
+Name SPSTATE.SPSTATE_PREPARE SPSTATE.SPSTATE_YTEST_DRAW SPSTATE.SPSTATE_IDLE 
+SPSTATE.SPSTATE_IDLE 0 0 0 
+SPSTATE.SPSTATE_YTEST_DRAW 0 1 1 
+SPSTATE.SPSTATE_PREPARE 1 0 1 
+
+State Machine - |MSX|emsx_top:emsx|VDP:U20|VDP_NTSC_PAL:U_VDP_NTSC_PAL|FF_SSTATE
+Name FF_SSTATE.SSTATE_D FF_SSTATE.SSTATE_C FF_SSTATE.SSTATE_B FF_SSTATE.SSTATE_A 
+FF_SSTATE.SSTATE_A 0 0 0 0 
+FF_SSTATE.SSTATE_B 0 0 1 1 
+FF_SSTATE.SSTATE_C 0 1 0 1 
+FF_SSTATE.SSTATE_D 1 0 0 1 
+
+State Machine - |MSX|emsx_top:emsx|eseps2:U06|MtxSeq
+Name MtxSeq.MtxReset MtxSeq.MtxEnd MtxSeq.MtxWrite MtxSeq.MtxRead MtxSeq.MtxClean MtxSeq.MtxSettle MtxSeq.MtxIdle 
+MtxSeq.MtxIdle 0 0 0 0 0 0 0 
+MtxSeq.MtxSettle 0 0 0 0 0 1 1 
+MtxSeq.MtxClean 0 0 0 0 1 0 1 
+MtxSeq.MtxRead 0 0 0 1 0 0 1 
+MtxSeq.MtxWrite 0 0 1 0 0 0 1 
+MtxSeq.MtxEnd 0 1 0 0 0 0 1 
+MtxSeq.MtxReset 1 0 0 0 0 0 1 
+
+State Machine - |MSX|emsx_top:emsx|eseps2:U06|Ps2Seq
+Name Ps2Seq.Ps2Stop Ps2Seq.Ps2Txd Ps2Seq.Ps2Rxd Ps2Seq.Ps2Idle 
+Ps2Seq.Ps2Idle 0 0 0 0 
+Ps2Seq.Ps2Rxd 0 0 1 1 
+Ps2Seq.Ps2Txd 0 1 0 1 
+Ps2Seq.Ps2Stop 1 0 0 1 
+
+State Machine - |MSX|sd_card:sd_card|write_state
+Name write_state.WR_STATE_BUSY write_state.WR_STATE_WRITE write_state.WR_STATE_SEND_DRESP write_state.WR_STATE_RECV_CRC1 write_state.WR_STATE_RECV_CRC0 write_state.WR_STATE_RECV_DATA write_state.WR_STATE_EXP_DTOKEN write_state.WR_STATE_IDLE 
+write_state.WR_STATE_IDLE 0 0 0 0 0 0 0 0 
+write_state.WR_STATE_EXP_DTOKEN 0 0 0 0 0 0 1 1 
+write_state.WR_STATE_RECV_DATA 0 0 0 0 0 1 0 1 
+write_state.WR_STATE_RECV_CRC0 0 0 0 0 1 0 0 1 
+write_state.WR_STATE_RECV_CRC1 0 0 0 1 0 0 0 1 
+write_state.WR_STATE_SEND_DRESP 0 0 1 0 0 0 0 1 
+write_state.WR_STATE_WRITE 0 1 0 0 0 0 0 1 
+write_state.WR_STATE_BUSY 1 0 0 0 0 0 0 1 
+
+State Machine - |MSX|sd_card:sd_card|read_state
+Name read_state.RD_STATE_DELAY read_state.RD_STATE_SEND_DATA read_state.RD_STATE_SEND_TOKEN read_state.RD_STATE_WAIT_IO read_state.RD_STATE_WAIT_BUSY read_state.RD_STATE_IDLE 
+read_state.RD_STATE_IDLE 0 0 0 0 0 0 
+read_state.RD_STATE_WAIT_BUSY 0 0 0 0 1 1 
+read_state.RD_STATE_WAIT_IO 0 0 0 1 0 1 
+read_state.RD_STATE_SEND_TOKEN 0 0 1 0 0 1 
+read_state.RD_STATE_SEND_DATA 0 1 0 0 0 1 
+read_state.RD_STATE_DELAY 1 0 0 0 0 1 
