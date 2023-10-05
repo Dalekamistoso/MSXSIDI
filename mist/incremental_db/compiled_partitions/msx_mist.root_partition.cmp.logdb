@@ -1,0 +1,10 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,emsx_top:emsx|esepwm:U33|esefir5:U1|lpm_mult:Mult0|mult_obt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,emsx_top:emsx|eseopll:U32|opll:U1|OutputGenerator:og|LinearTable:Ltbl|linear_table_mul:u_linear_table_mul|lpm_mult:Mult0|mult_n4t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,emsx_top:emsx|megaram:U31_2|scc_wave:SccCh|scc_wave_mul:u_mul|lpm_mult:Mult0|mult_73t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,emsx_top:emsx|megaram:U31_1|scc_wave:SccCh|scc_wave_mul:u_mul|lpm_mult:Mult0|mult_73t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,emsx_top:emsx|eseopll:U32|opll:U1|Operator:op|SineTable:u_sine_table|interpolate_mul:u_interpolate_mul|lpm_mult:Mult0|mult_v5t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,emsx_top:emsx|eseopll:U32|opll:U1|envelopegenerator:eg|AttackTable:u_attack_table|attack_table_mul:u_attack_table_mul|lpm_mult:Mult0|mult_f3t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,emsx_top:emsx|eseopll:U32|opll:U1|PhaseGenerator:pg|lpm_mult:Mult0|mult_cat:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,emsx_top:emsx|eseopll:U32|opll:U1|OutputGenerator:og|LinearTable:Ltbl|linear_table_mul:u_linear_table_mul|lpm_mult:Mult0|mult_n4t:auto_generated|mac_mult1,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,emsx_top:emsx|eseopll:U32|opll:U1|Operator:op|SineTable:u_sine_table|interpolate_mul:u_interpolate_mul|lpm_mult:Mult0|mult_v5t:auto_generated|mac_mult1,
