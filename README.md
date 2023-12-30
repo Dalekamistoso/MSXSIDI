@@ -1,3 +1,5 @@
+*** NEW RELEASES AND UPDATES MOVED TO https://github.com/Dalekamistoso/drwh0-computer-sidi ***
+
 # DrWh0's OneChipMSX unofficial port for [Sidi Board]
 
 Ported from:
